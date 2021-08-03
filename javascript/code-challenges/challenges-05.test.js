@@ -49,7 +49,7 @@ Write a function named countNumberOfElements that, given an array as input, uses
 Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
-const countNumberOfElements = (arr) => arr.reduce((acc,val)=>acc+number,0)
+const countNumberOfElements = (arr) => arr.reduce(acc=>acc+1,0)
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -126,8 +126,8 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 ------------------------------------------------------------------------------------------------ */
 
 const reversedString = (str) => {
-  const arr = str.reverse('');
-  return arr.reduce((acc, val) => val + acc, '');
+  const arr = str.split ('');
+  return arr.reduce ((acc, val) => val + acc, '');
 };
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
