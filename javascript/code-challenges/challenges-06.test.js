@@ -26,8 +26,8 @@ const getNames = (arr) => {
   // Solution code here...
 
   let arrOfPepole=[];
-  arr.map((item)=>{
-    arrOfPepole.push(item.name.split(''))
+  arr.map(item=>{
+    arrOfPepole.push(item.name.split('').reverse().join(''))
 
   });
   return arrOfPepole
