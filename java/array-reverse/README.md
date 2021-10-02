@@ -1,6 +1,6 @@
 # array-reverse whiteboard 
 
-<img src="ass22211.jpg"/>
+<img src="revers array res.jpg"/>
 
 
 Auther :Mohammad kabbara
