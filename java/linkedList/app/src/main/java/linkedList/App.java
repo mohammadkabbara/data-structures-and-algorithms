@@ -4,11 +4,11 @@
 package linkedList;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+  public String getGreeting() {
+    return "Hello World!";
+  }
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 //        System.out.println(new App().getGreeting());
 ////
 //    LinkedList showValue = new LinkedList();
@@ -26,20 +26,23 @@ public class App {
 //    System.out.println(showValue.toString());
 //
 //    }
-      //////////////////code 6////////
-
-//append method
-      LinkedList list2 = new LinkedList();
-      list2.append(4);
-      list2.append(1);
-      list2.append(5);
-      System.out.println(list2.toString());
-
-//   insertBefore
-      list2.insertBefore(1, 3);
-      System.out.println(list2.toString());
+    //////////////////code 6////////
 
 
+    LinkedList list = new LinkedList();
+    list.append(2);
+    list.append(1);
+    list.append(4);
+    System.out.println("append method" + " " + list.toString());
+
+
+    list.insertBefore(1, 3);
+    System.out.println("insertBefore" + " " + list.toString());
+
+
+    list.insertAfter(2,100);
+    System.out.println("insertAfter" + " " + list.toString());
+  }
     }
-}
+
 //
