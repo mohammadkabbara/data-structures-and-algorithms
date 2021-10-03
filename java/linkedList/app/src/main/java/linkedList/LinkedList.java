@@ -8,50 +8,82 @@ public class LinkedList {
 
   /////////insert//////////
 
-  public void insert(int data) {
-    Node newNode = new Node(data);
+  //  public void insert(int data) {
+//    Node newNode = new Node(data);
+//    if (head == null) {
+//      head = newNode;
+//      tail=head;
+//    }else {
+//      tail.next = newNode;
+//      tail=newNode;
+//    }
+//
+//  }
+//  /////////include//////////
+//public boolean include(int data){
+//  Node currentNode =head;
+//  while(currentNode!=null){
+//    if(data ==currentNode.data){
+//      System.out.println("it is include ");
+//      return true;
+//    }
+//    currentNode=currentNode.next;
+//  }
+//  System.out.println("it is not include");
+//  return false;
+//}
+//  /////////toString//////////
+//
+//  public String toString(){
+//    String toStringList="";
+//    Node currentNode = head;
+//    if (head==null){
+//      System.out.println("the list empty");
+//
+//    }
+//    while (currentNode!=null){
+//      toStringList += "{"  + currentNode.data +"} ==>";
+//      System.out.print("{" + currentNode.data + "}" + "==> ");
+//      currentNode = currentNode.next;
+//    }
+//    System.out.println("null");
+//    return toStringList;
+//  }
+  //////////////////////////////////////////////////////// code challenge 6///////////////////////////////////////////
+  public void append(int data){
+    Node append = new Node(data);
     if (head == null) {
-      head = newNode;
-      tail=head;
-    }else {
-      tail.next = newNode;
-      tail=newNode;
+      head = append;
+      tail = head;
+    } else {
+      tail.next = append;
+      tail = append;
     }
-
-  }
-  /////////include//////////
-public boolean include(int data){
-  Node currentNode =head;
-  while(currentNode!=null){
-    if(data ==currentNode.data){
-      System.out.println("it is include ");
-      return true;
-    }
-    currentNode=currentNode.next;
-  }
-  System.out.println("it is not include");
-  return false;
-}
-  /////////toString//////////
-
-  public String toString(){
-    String toStringList="";
-    Node currentNode = head;
-    if (head==null){
-      System.out.println("the list empty");
-
-    }
-    while (currentNode!=null){
-      toStringList += "{"  + currentNode.data +"} ==>";
-      System.out.print("{" + currentNode.data + "}" + "==> ");
-      currentNode = currentNode.next;
-    }
-    System.out.println("null");
-    return toStringList;
   }
 
+  public void insertBefore(int value, int newValue) {
+    if (head != null) {
+      if (value == head.data) {
+        Node newNode = new Node(newValue);
+        newNode.next = head;
+        head = newNode;
+//        newValue=head
 
-
+      } else {
+        Node current = head;
+        Node previous = current;
+        while (current != null) {
+          if (value == current.data) {
+            Node newNode = new Node(newValue);
+            newNode.next = current;
+            previous.next = newNode;
+          }
+          previous = current;
+          current = current.next;
+        }
+      }
+    }
+  }
 }
 
 

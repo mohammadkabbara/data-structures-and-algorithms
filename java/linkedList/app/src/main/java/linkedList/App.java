@@ -9,23 +9,37 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+//        System.out.println(new App().getGreeting());
+////
+//    LinkedList showValue = new LinkedList();
+//    // insert
+//      showValue.insert(1);
+//      showValue.insert(2);
+//      showValue.insert(67);
+//      showValue.insert(50);
+//      showValue.insert(4);
+//
+//    //includes
+//    System.out.println(showValue.include(3));
+//
+//    // to string
+//    System.out.println(showValue.toString());
+//
+//    }
+      //////////////////code 6////////
 
-    LinkedList showValue = new LinkedList();
-    // insert
-      showValue.insert(1);
-      showValue.insert(2);
-      showValue.insert(67);
-      showValue.insert(50);
-      showValue.insert(4);
+//append method
+      LinkedList list2 = new LinkedList();
+      list2.append(4);
+      list2.append(1);
+      list2.append(5);
+      System.out.println(list2.toString());
 
-    //includes
-    System.out.println(showValue.include(3));
+//   insertBefore
+      list2.insertBefore(1, 3);
+      System.out.println(list2.toString());
 
-    // to string
-    System.out.println(showValue.toString());
 
     }
-
 }
-
+//
