@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b4a05cc-5d2c-4f2b-b01e-383863c1881f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/aopalliance-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/guava-19.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/guice-4.1.0-no_aop.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.inject-1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jcommander-1.72.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/snakeyaml-1.21.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/testng-7.1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/linkedList/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/linkedList/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/linkedList/LinkedList.java" afterDir="false" />
@@ -23,6 +15,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -60,7 +55,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="TestNG.AppTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="linkedList.App" />
       <module name="linkedList.app.main" />
@@ -90,10 +85,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppTest.testLinkedListKth_KGreaterLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="linkedList.app.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="linkedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="linkedList" />
+      <option name="MAIN_CLASS_NAME" value="linkedList.AppTest" />
+      <option name="METHOD_NAME" value="testLinkedListKth_KGreaterLength" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="linkedList.app.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="linkedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="linkedList" />
+      <option name="MAIN_CLASS_NAME" value="linkedList.AppTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest.testLinkList" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="linkedList.app.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="linkedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="linkedList" />
+      <option name="MAIN_CLASS_NAME" value="linkedList.AppTest" />
+      <option name="METHOD_NAME" value="testLinkList" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AppTest" />
         <item itemvalue="Application.App" />
+        <item itemvalue="TestNG.AppTest.testLinkList" />
         <item itemvalue="JUnit.AppTest.testLinkList" />
+        <item itemvalue="JUnit.AppTest.testLinkedListKth_KGreaterLength" />
       </list>
     </recent_temporary>
   </component>
