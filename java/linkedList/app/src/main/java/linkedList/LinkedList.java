@@ -115,4 +115,29 @@ public boolean include(int data){
       }
     }
   }
+
+  //////////////////code 7////////
+  public int linkedListKth(int number) throws IndexOutOfBoundsException  {
+    int length= 0; // the value for n
+    Node current = head; // the first node for the pinter to check from
+
+    while (current != null) {
+      length++;
+      current = current.next;
+    }
+    if (number < 0 || number >= length) {
+      throw new IndexOutOfBoundsException("number not in the range");
+    }
+
+    int k = length - number;
+//       current = null;
+    if (k > 0) {
+      current = head;
+      for (int i = 1; i < k; i++) {
+        current = current.next;
+      }
+    }
+    return current.data;
+  }
+
 }
