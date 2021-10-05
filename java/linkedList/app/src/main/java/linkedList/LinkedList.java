@@ -140,4 +140,33 @@ public boolean include(int data){
     return current.data;
   }
 
+  //////////////////code 8////////
+
+
+  public Node zipLists(LinkedList firstList, LinkedList secondList) {
+
+    if (firstList.head == null && secondList.head == null) return null;
+    if (firstList.head == null) return secondList.head;
+    if (secondList.head == null) return firstList.head;
+
+    LinkedList thirdList = new LinkedList();
+    thirdList.head = firstList.head;
+
+    Node current = firstList.head;
+    firstList.head = firstList.head.next;
+
+    while (current != null && (secondList.head != null || firstList.head != null)) {
+      if (secondList.head != null) {
+        current.next = secondList.head;
+        secondList.head = secondList.head.next;
+        current = current.next;
+      }
+      if (firstList.head != null) {
+        current.next = firstList.head;
+        firstList.head = firstList.head.next;
+        current = current.next;
+      }
+    }
+    return thirdList.head;
+  }
 }
