@@ -49,26 +49,44 @@ public class App {
 
 
 // kth from end
-    try {
-      LinkedList listKth = new LinkedList();
-      listKth.append(1);
-      listKth.append(2);
-      listKth.append(3);
-      listKth.append(4);
-      listKth.append(5);
-      listKth.append(6);
-      listKth.append(7);
-      listKth.append(8);
-      listKth.append(9);
-      listKth.append(10);
+//    try {
+//      LinkedList listKth = new LinkedList();
+//      listKth.append(1);
+//      listKth.append(2);
+//      listKth.append(3);
+//      listKth.append(4);
+//      listKth.append(5);
+//      listKth.append(6);
+//      listKth.append(7);
+//      listKth.append(8);
+//      listKth.append(9);
+//      listKth.append(10);
+//
+//      System.out.println(listKth.linkedListKth(1));
+//      System.out.println(listKth.linkedListKth(-7));
+//    } catch (IndexOutOfBoundsException e) {
+//      System.out.println("number out of the range");
+//    }
 
-      System.out.println(listKth.linkedListKth(1));
-      System.out.println(listKth.linkedListKth(-7));
-    } catch (IndexOutOfBoundsException e) {
-      System.out.println("number out of the range");
-    }
+
+    //////////////////code 8////////
+    LinkedList firstList = new LinkedList();
+    firstList.append(1);
+    firstList.append(2);
+    firstList.append(3);
+    System.out.println(firstList);
+    LinkedList secondList = new LinkedList();
+    secondList.append(4);
+    secondList.append(5);
+    secondList.append(6);
+    System.out.println(secondList);
+
+    System.out.println("  ");
+
+    LinkedList newZippedList = new LinkedList();
+    newZippedList.head = firstList.zipLists(firstList,secondList);
+    System.out.println(newZippedList);
   }
-
-    }
+}
 
 //
