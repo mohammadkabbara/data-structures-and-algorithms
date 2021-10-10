@@ -12,12 +12,12 @@ public class Library {
     stackList.push(3);
     stackList.push(4);
 
-    System.out.println(" ============ Stack =========== ");
-    System.out.println( stackList);
-    System.out.println( stackList.isEmpty());
-    System.out.println( stackList.pop());
-    System.out.println( stackList.peek());
-    System.out.println( stackList);
+//    System.out.println(" ============ Stack =========== ");
+//    System.out.println( stackList);
+//    System.out.println( stackList.isEmpty());
+//    System.out.println( stackList.pop());
+//    System.out.println( stackList.peek());
+//    System.out.println( stackList);
 
 
     Queue<String> queueList = new Queue<>();
@@ -26,13 +26,30 @@ public class Library {
     queueList.enqueue("3");
     queueList.enqueue("4");
 
-    System.out.println(" ============ Queue =========== ");
-    System.out.println( queueList);
-    System.out.println(queueList.isEmpty());
-    System.out.println(queueList.dequeue());
-    System.out.println(queueList.peek());
-    System.out.println( queueList);
+//    System.out.println(" ============ Queue =========== ");
+//    System.out.println( queueList);
+//    System.out.println(queueList.isEmpty());
+//    System.out.println(queueList.dequeue());
+//    System.out.println(queueList.peek());
+//    System.out.println( queueList);
+
+
+
+
+
+
+    //////////////////////////code 11//////////////////
+    PseudoQueue test = new PseudoQueue();
+    test.enqueue(7);
+    test.enqueue(3);
+    test.enqueue(5);
+    test.enqueue(4);
+    test.enqueue(7);
+    test.dequeue();
+    test.enqueue(11);
+    test.dequeue();
+    test.dequeue();
+    System.out.println(test.stackOne.toString());
 
   }
 }
-

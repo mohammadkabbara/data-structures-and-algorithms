@@ -7,8 +7,20 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
-    @Test void someLibraryMethodReturnsTrue() {
-        Library classUnderTest = new Library();
-        assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
-    }
+  @Test void stackQueuePseudo() {
+  PseudoQueue test = new PseudoQueue();
+
+assertNull(test.dequeue());
+test.enqueue(4);
+    test.enqueue(5);
+    test.enqueue(2);
+    test.enqueue(3);
+    assertEquals(4,test.dequeue());
+
+    test.dequeue();
+    test.dequeue();
+
+    assertEquals(3,test.dequeue());
+
+}
 }
