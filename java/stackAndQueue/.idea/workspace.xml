@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f21b08b2-9302-4d01-ad2b-f4217d9b71ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/stackAndQueue.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/stackAndQueue/PseudoQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/stackAndQueue/Animal/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/stackAndQueue/Animal/AnimalShelter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/stackAndQueue/Animal/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/stackAndQueue/Animal/Dog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/stackAndQueue/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/stackAndQueue/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/test/java/stackAndQueue/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/stackAndQueue/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +60,12 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MTHome" />
   </component>
-  <component name="RunManager" selected="Gradle.LibraryTest.stackQueuePseudo">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu\home\mohammadkabbara\codefollowers\401\data-structures-and-algorithms\java\stackAndQueue\lib\src\image" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Library">
     <configuration name="Library" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="stackAndQueue.Library" />
       <module name="stackAndQueue.lib.main" />
