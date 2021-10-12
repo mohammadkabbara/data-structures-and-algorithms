@@ -38,10 +38,6 @@ public class Library {
 //    System.out.println( queueList);
 
 
-
-
-
-
     //////////////////////////code 11//////////////////
 //    PseudoQueue test = new PseudoQueue();
 //    test.enqueue(7);
@@ -58,20 +54,40 @@ public class Library {
     ////////////////////code 12 /////////
 
 
-    AnimalShelter lists = new AnimalShelter();
-//    System.out.println(lists);
-    lists.enqueue(new Cat("Cat1"));
-    lists.enqueue(new Cat("Cat2"));
-    lists.enqueue(new Cat("Cat3"));
-    lists.enqueue(new Dog("Dog1"));
-    lists.enqueue(new Dog("Dog2"));
-    lists.enqueue(new Dog("Dog3"));
-    lists.dequeue("cat");
-    lists.dequeue("dog");
-//    lists.dequeue("dog2");
+//    AnimalShelter lists = new AnimalShelter();
+////    System.out.println(lists);
+//    lists.enqueue(new Cat("Cat1"));
+//    lists.enqueue(new Cat("Cat2"));
+//    lists.enqueue(new Cat("Cat3"));
+//    lists.enqueue(new Dog("Dog1"));
+//    lists.enqueue(new Dog("Dog2"));
+//    lists.enqueue(new Dog("Dog3"));
+//    lists.dequeue("cat");
+//    lists.dequeue("dog");
+////    lists.dequeue("dog2");
+//
+//    System.out.println(lists.catQueue.toString());
+//    System.out.println(lists.dogQueue.toString());
 
-    System.out.println(lists.catQueue.toString());
-    System.out.println(lists.dogQueue.toString());
+
+
+
+
+
+    /////////////////////////code 13///////////////////////////////////////////////////
+
+
+    Brackets lists = new Brackets();
+    System.out.println(" the result is --> " + Brackets.brackets("[[by]]"));
+   System.out.println("the result is --> " + Brackets.brackets("({{}})"));
+ System.out.println("the result is --> " + Brackets.brackets("{()"));
+    System.out.println(" the result is --> " + Brackets.brackets("({}"));
+    System.out.println("the result is --> " + Brackets.brackets("int )"));
+    System.out.println(" the result is --> " + Brackets.brackets(""));
+    System.out.println(" the result is --> " + Brackets.brackets("mooo"));
+    System.out.println("the result is --> " + Brackets.brackets("m((}}"));
+
+
   }
-
 }
+

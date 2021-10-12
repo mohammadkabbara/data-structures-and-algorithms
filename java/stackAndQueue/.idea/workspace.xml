@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f21b08b2-9302-4d01-ad2b-f4217d9b71ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/stackAndQueue/Animal/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/stackAndQueue/Animal/AnimalShelter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/stackAndQueue/Animal/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/main/java/stackAndQueue/Animal/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/stackAndQueue/Brackets.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/stackAndQueue/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/stackAndQueue/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/stackAndQueue/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/stackAndQueue/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +63,7 @@
       <recent name="\\wsl$\Ubuntu\home\mohammadkabbara\codefollowers\401\data-structures-and-algorithms\java\stackAndQueue\lib\src\image" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Library">
+  <component name="RunManager" selected="Gradle.LibraryTest.stackQueueBrackets">
     <configuration name="Library" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="stackAndQueue.Library" />
       <module name="stackAndQueue.lib.main" />
@@ -78,6 +76,27 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="LibraryTest.stackQueueBrackets" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;stackAndQueue.LibraryTest.stackQueueBrackets&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":lib:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="LibraryTest.stackQueuePseudo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -102,6 +121,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LibraryTest.stackQueueBrackets" />
         <item itemvalue="Gradle.LibraryTest.stackQueuePseudo" />
         <item itemvalue="Application.Library" />
       </list>
