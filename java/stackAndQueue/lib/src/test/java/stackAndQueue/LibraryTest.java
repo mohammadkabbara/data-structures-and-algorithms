@@ -5,7 +5,50 @@ package stackAndQueue;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import static stackAndQueue.Brackets.brackets;
 
 class LibraryTest {
 
+
+
+  @Test void stackQueuePseudo() {
+  PseudoQueue<Integer> test = new PseudoQueue<Integer>();
+
+assertNull(test.dequeue());
+test.enqueue(4);
+    test.enqueue(5);
+    test.enqueue(2);
+    test.enqueue(3);
+    assertEquals(4,test.dequeue());
+
+    test.dequeue();
+    test.dequeue();
+
+    assertEquals(3,test.dequeue());
+
 }
+
+
+  @Test void stackQueueBrackets() {
+
+
+    String testString = "";
+    assertTrue(brackets(testString));
+
+    // If the brackets true.
+    testString = "mm (  )";
+    assertTrue(brackets(testString));
+
+    // If the brackets false.
+    testString = " ({}] )";
+    assertFalse(brackets(testString));
+
+    testString = "[ { ( { } ] )";
+    assertFalse(brackets(testString));
+
+    testString = "[[({})]]";
+    assertTrue(brackets(testString));
+  }
+
+}
+

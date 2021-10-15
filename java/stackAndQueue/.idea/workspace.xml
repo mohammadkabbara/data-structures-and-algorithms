@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f21b08b2-9302-4d01-ad2b-f4217d9b71ec" name="Changes" comment="">
+
       <change afterPath="$PROJECT_DIR$/lib/src/test/java/stackAndQueue/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/stackAndQueue/Brackets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/stackAndQueue/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/stackAndQueue/Library.java" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/lib/src/test/java/stackAndQueue/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/stackAndQueue/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +29,7 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+
         <projects_view>
           <tree_state>
             <expand>
@@ -34,6 +41,12 @@
             <select />
           </tree_state>
         </projects_view>
+
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+
       </state>
     </system>
   </component>
@@ -59,12 +72,14 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MTHome" />
   </component>
   <component name="RecentsManager">
+
     <key name="CreateClassDialog.RecentsKey">
       <recent name="stackAndQueue" />
     </key>
@@ -174,14 +189,81 @@
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
+
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu\home\mohammadkabbara\codefollowers\401\data-structures-and-algorithms\java\stackAndQueue\lib\src\image" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.LibraryTest.stackQueueBrackets">
+    <configuration name="Library" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stackAndQueue.Library" />
+      <module name="stackAndQueue.lib.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stackAndQueue.PseudoQueue" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+
+    </configuration>
+    <configuration name="LibraryTest.stackQueueBrackets" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;stackAndQueue.LibraryTest.stackQueueBrackets&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":lib:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="LibraryTest.stackQueuePseudo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;stackAndQueue.LibraryTest.stackQueuePseudo&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":lib:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+
         <item itemvalue="Gradle.App" />
         <item itemvalue="Gradle.App.testQueueEnqueue" />
         <item itemvalue="Gradle.App.testQueueEnqueue2" />
         <item itemvalue="Gradle.App.testQueueDequeue" />
         <item itemvalue="Gradle.App.testQueuePeek" />
+
+        <item itemvalue="Gradle.LibraryTest.stackQueueBrackets" />
+        <item itemvalue="Gradle.LibraryTest.stackQueuePseudo" />
+        <item itemvalue="Application.Library" />
+
       </list>
     </recent_temporary>
   </component>
