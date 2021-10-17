@@ -48,4 +48,31 @@ public class BinaryTree {
   public String toString() {
     return "BinaryTree{" + "root=" + root + '}';
   }
+
+
+  //////////////////////////16///////////////////
+
+  public int  maximum (Node root){
+
+    if(root == null) {
+      System.out.println("empty");
+      return 0;
+    }
+    else{
+      int leftMax;
+      int rightMax;
+
+      int max = root.value;
+      if(root.left != null){
+        leftMax = maximum(root.left);
+        max = Math.max(max, leftMax);
+      }
+      if(root.right != null){
+        rightMax = maximum(root.right);
+        max = Math.max(max, rightMax);
+      }
+      return max;
+    }
+  }
+
 }
