@@ -22,5 +22,3 @@ public class Node {
     return "Node{" + "value=" + value + ", left=" + left + ", right=" + right + '}';
   }
 }
-
-////

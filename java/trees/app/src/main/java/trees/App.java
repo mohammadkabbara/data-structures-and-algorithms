@@ -11,16 +11,29 @@ public class App {
   public static void main(String[] args) {
     System.out.println(new App().getGreeting());
 
+//    BinarySearchTree tree = new BinarySearchTree();
+//
+//    tree.add(5, tree.root);
+//    tree.add(8, tree.root);
+//    tree.add(3, tree.root);
+//
+//
+//    tree.preOrder(tree.root);
+//    tree.inOrder(tree.root);
+//    tree.postOrder(tree.root);
+
+///////////////////////////////////////////////////16////////////////
     BinarySearchTree tree = new BinarySearchTree();
 
-    tree.add(5, tree.root);
-    tree.add(8, tree.root);
-    tree.add(3, tree.root);
+    tree.root = new Node(4);
+    tree.root.left = new Node(5);
+    tree.root.right = new Node(3);
+    tree.root.left.right = new Node(10);
+    tree.root.left.right.left = new Node(1);
+    tree.root.right.right = new Node(20);
 
-
-    tree.preOrder(tree.root);
-      tree.inOrder(tree.root);
-      tree.postOrder(tree.root);
+    System.out.println(tree.maximum(tree.root));
   }
-
 }
+
+
