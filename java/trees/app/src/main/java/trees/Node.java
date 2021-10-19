@@ -1,24 +1,32 @@
 package trees;
 
-public class Node {
-  public int value;
-  public Node left;
-  public Node right;
 
-  public Node(int value) {
+public class Node<T> {
+
+  public T value;
+  public Node leftChild;
+  public Node rightChild;
+  public Node next;
+
+  public Node(T value) {
     this.value = value;
   }
 
-
-  public int getValue() {
-    return value;
-  }
-
-  public void setValue(int value) {
+  public Node(T value, Node leftChild, Node rightChild) {
     this.value = value;
-  }
-  @Override
-  public String toString() {
-    return "Node{" + "value=" + value + ", left=" + left + ", right=" + right + '}';
+    this.leftChild = leftChild;
+    this.rightChild = rightChild;
   }
 }
+//  @Override
+//  public String toString() {
+//    if (front == null) return "null";
+//    String outList = "Front = ";
+//    Node<T> current = front;
+//    while (current != null){
+//      outList += current.value+ " -> ";
+//      current = current.next;
+//    }
+//    outList += "Null";
+//    return outList;
+//  }

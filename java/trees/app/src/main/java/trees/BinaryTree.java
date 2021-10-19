@@ -1,78 +1,43 @@
 package trees;
 
-public class BinaryTree {
+import java.util.ArrayList;
+import java.util.List;
 
-  Node root;
-  public BinaryTree(){
-    this.root=null;
-  }
-  public Node getRoot(){
-    return root;
-  }
-  public void setRoot(Node root){
-    this.root=root;
-  }
+public class BinaryTree<T> {
 
 
+  public Node<Integer> root;
 
-  public void preOrder (Node root){
-    System.out.println(root.value);
-    if (root.left !=null){
-      preOrder(root.left);
-    }
-    if (root.right !=null){
-      preOrder(root.right);
-    }
+  public BinaryTree() {
   }
-
-  public void inOrder(Node root){
-    if (root.left !=null){
-      inOrder(root.left);
-    }
-    System.out.println(root.value);
-    if (root.right !=null){
-      inOrder(root.right);
-    }
-  }
-
-  public void postOrder(Node root){
-    if (root.left !=null){
-      postOrder(root.left);
-    }
-    if (root.right !=null){
-      postOrder(root.right);
-    }
-    System.out.println(root.value);
-  }
-  @Override
-  public String toString() {
-    return "BinaryTree{" + "root=" + root + '}';
+//
+  public BinaryTree(Node<Integer> root) {
+    this.root = root;
   }
 
 
-  //////////////////////////16///////////////////
+  public static ArrayList<Integer> breadthFirst(BinaryTree<Integer> binaryTree) {
+    if (binaryTree.root == null) return null;
 
-  public int  maximum (Node root){
+    ArrayList<Integer> breadthFirstList = new ArrayList<>();
+    Queue<Integer> myQueue = new Queue<>();
 
-    if(root == null) {
-      System.out.println("empty");
-      return 0;
-    }
-    else{
-      int leftMax;
-      int rightMax;
+    myQueue.enqueue(binaryTree.root);
 
-      int max = root.value;
-      if(root.left != null){
-        leftMax = maximum(root.left);
-        max = Math.max(max, leftMax);
+    while (!myQueue.isEmpty()) {
+
+      Node<Integer> front = myQueue.dequeue();
+      breadthFirstList.add(front.value);
+
+      if (front.leftChild != null) {
+        myQueue.enqueue(front.leftChild);
       }
-      if(root.right != null){
-        rightMax = maximum(root.right);
-        max = Math.max(max, rightMax);
+      if (front.rightChild != null) {
+        myQueue.enqueue(front.rightChild);
       }
-      return max;
     }
+
+    return breadthFirstList;
   }
 
 }
