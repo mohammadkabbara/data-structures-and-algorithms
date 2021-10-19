@@ -3,37 +3,39 @@
  */
 package trees;
 
+import java.util.ArrayList;
+
+import static trees.BinaryTree.breadthFirst;
+
 public class App {
-  public String getGreeting() {
-    return "Hello World!";
-  }
 
   public static void main(String[] args) {
-    System.out.println(new App().getGreeting());
+    BinarySearchTree binarySearchTree = new BinarySearchTree(new Node<>(23));
 
-//    BinarySearchTree tree = new BinarySearchTree();
-//
-//    tree.add(5, tree.root);
-//    tree.add(8, tree.root);
-//    tree.add(3, tree.root);
-//
-//
-//    tree.preOrder(tree.root);
-//    tree.inOrder(tree.root);
-//    tree.postOrder(tree.root);
+    Node<Integer> searchNode0 = new Node<>(22);
 
-///////////////////////////////////////////////////16////////////////
-    BinarySearchTree tree = new BinarySearchTree();
 
-    tree.root = new Node(4);
-    tree.root.left = new Node(5);
-    tree.root.right = new Node(3);
-    tree.root.left.right = new Node(10);
-    tree.root.left.right.left = new Node(1);
-    tree.root.right.right = new Node(20);
+    Node<Integer> searchNode1 = new Node<>(4);
+    Node<Integer> searchNode2 = new Node<>(16, null, searchNode0);
+    Node<Integer> searchNode3 = new Node<>(8, searchNode1, searchNode2);
+    Node<Integer> searchNode5 = new Node<>(27);
 
-    System.out.println(tree.maximum(tree.root));
+    Node<Integer> searchNode7 = new Node<>(105);
+    Node<Integer> searchNode6 = new Node<>(85, null, searchNode7);
+    Node<Integer> searchNode4 = new Node<>(42, searchNode5, searchNode6);
+    binarySearchTree.root.leftChild = searchNode3;
+
+    binarySearchTree.root.rightChild = searchNode4;
+
+    System.out.println(breadthFirst(binarySearchTree));
+
+
+//    System.out.println(breadthFirst(newTree));
+
+  }
+
+
+  public static ArrayList<Integer> breadthFirst(BinaryTree<Integer> newTree) {
+    return null;
   }
 }
-
-
