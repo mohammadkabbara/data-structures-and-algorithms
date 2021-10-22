@@ -4,38 +4,84 @@
 package trees;
 
 import java.util.ArrayList;
+import java.util.List;
 
-import static trees.BinaryTree.breadthFirst;
+//import static trees.BinaryTree.breadthFirst;
 
 public class App {
 
   public static void main(String[] args) {
     BinarySearchTree binarySearchTree = new BinarySearchTree(new Node<>(23));
 
-    Node<Integer> searchNode0 = new Node<>(22);
+  //  Node<Integer> searchNode0 = new Node<>(22);
 
 
-    Node<Integer> searchNode1 = new Node<>(4);
-    Node<Integer> searchNode2 = new Node<>(16, null, searchNode0);
-    Node<Integer> searchNode3 = new Node<>(8, searchNode1, searchNode2);
-    Node<Integer> searchNode5 = new Node<>(27);
+  //  Node<Integer> searchNode1 = new Node<>(4);
+  //  Node<Integer> searchNode2 = new Node<>(16, null, searchNode0);
+  //  Node<Integer> searchNode3 = new Node<>(8, searchNode1, searchNode2);
+  //  Node<Integer> searchNode5 = new Node<>(27);
 
-    Node<Integer> searchNode7 = new Node<>(105);
-    Node<Integer> searchNode6 = new Node<>(85, null, searchNode7);
-    Node<Integer> searchNode4 = new Node<>(42, searchNode5, searchNode6);
-    binarySearchTree.root.leftChild = searchNode3;
+  //  Node<Integer> searchNode7 = new Node<>(105);
+  //  Node<Integer> searchNode6 = new Node<>(85, null, searchNode7);
+  //  Node<Integer> searchNode4 = new Node<>(42, searchNode5, searchNode6);
+  //  binarySearchTree.root.leftChild = searchNode3;
 
-    binarySearchTree.root.rightChild = searchNode4;
+   // binarySearchTree.root.rightChild = searchNode4;
 
-    System.out.println(breadthFirst(binarySearchTree));
+//    System.out.println(breadthFirst(binarySearchTree));
 
 
 //    System.out.println(breadthFirst(newTree));
 
+
+
+
+    /////////////////code 18/////////////////
+
+    Node<Integer> root = new Node<Integer>(15);
+    root.child.add(new Node<>(6));
+    root.child.add(new Node<>(5));
+    root.child.add(new Node<>(8));
+    System.out.println(treeFizzBuzz(root));
   }
 
 
-  public static ArrayList<Integer> breadthFirst(BinaryTree<Integer> newTree) {
-    return null;
+
+  public static List<String> treeFizzBuzz(Node<Integer> root) {
+    List<String> newList = new ArrayList<>();
+
+    if (root.value == null) return newList;
+    Queue queue = new Queue();
+
+    queue.enqueue(root);
+    while (!queue.isEmpty()) {
+
+      Node<Integer> node = queue.dequeue();
+      for (int i = 0; i < node.child.size(); i++)
+
+        queue.enqueue(node.child.get(i));
+      if (node.value % 3 == 0 && node.value % 5 == 0) {
+
+        newList.add("FizzBuzz");
+      } else if (node.value % 3 == 0) {
+
+        newList.add("Fizz");
+      } else if (node.value % 5 == 0) {
+
+        newList.add("Buzz");
+      } else {
+
+      newList.add("\"" + node.value + "\"");
+      }
+    }
+    return newList;
   }
+
+
+
 }
+
+
+
+
+
