@@ -11,34 +11,55 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-  @Test void breadthFirst() {
+//  @Test void breadthFirst() {
+//
+//
+//    BinaryTree<Integer> newTree = new BinaryTree<>();
+//    assertNull(App.breadthFirst(newTree));
+//
+//
+//    newTree.root = new Node<>(5);
+//    ArrayList<Integer> testList = new ArrayList<>();
+//    testList.add(5);
+//    assertEquals( testList , App.breadthFirst(newTree));
+//
+//
+//
+//    Node<Integer> node1 = new Node<>(2);
+//
+//    Node<Integer> node2 = new Node<>(3);
+//    Node<Integer> node3 = new Node<>(1, node1, node2);
+//    Node<Integer> node5 = new Node<>(6);
+//    Node<Integer> node4 = new Node<>(4, node5, null);
+//    newTree.root.rightChild = node4;
+//
+//    newTree.root.leftChild = node3;
+//    testList.add(1);
+//    testList.add(4);
+//    testList.add(2);
+//    testList.add(3);
+//    testList.add(6);
+//    assertEquals( testList, App.breadthFirst(newTree));
 
+  ////////////////////////////TEST 18 /////////////
+@Test void KTree() {
+  Node<Integer> root = new Node();
+  ArrayList<String> testList = new ArrayList<>();
 
-    BinaryTree<Integer> newTree = new BinaryTree<>();
-    assertNull(App.breadthFirst(newTree));
+  root.value = 0;
+  testList.add("FizzBuzz");
+  assertEquals(testList , App.treeFizzBuzz(root));
 
+  root.child.add(new Node(11));
+  root.child.add(new Node(3));
+  root.child.add(new Node(5));
+  root.child.add(new Node(15));
 
-    newTree.root = new Node<>(5);
-    ArrayList<Integer> testList = new ArrayList<>();
-    testList.add(5);
-    assertEquals( testList , App.breadthFirst(newTree));
+  testList.add("\""+11+"\"");
+  testList.add("Fizz");
+  testList.add("Buzz");
+  testList.add("FizzBuzz");
+  assertEquals( testList, App.treeFizzBuzz(root));
+}
 
-
-
-    Node<Integer> node1 = new Node<>(2);
-
-    Node<Integer> node2 = new Node<>(3);
-    Node<Integer> node3 = new Node<>(1, node1, node2);
-    Node<Integer> node5 = new Node<>(6);
-    Node<Integer> node4 = new Node<>(4, node5, null);
-    newTree.root.rightChild = node4;
-
-    newTree.root.leftChild = node3;
-    testList.add(1);
-    testList.add(4);
-    testList.add(2);
-    testList.add(3);
-    testList.add(6);
-    assertEquals( testList, App.breadthFirst(newTree));
-  }
 }
