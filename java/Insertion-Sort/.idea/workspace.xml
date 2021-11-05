@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5534ee1f-3002-4d28-ba52-538cf1c44c78" name="Changes" comment="">
+
       <change afterPath="$PROJECT_DIR$/app/src/img/blog 27.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/img/cc27.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/Insertion/Sort/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/Insertion/Sort/AppTest.java" afterDir="false" />
+
+      <change afterPath="$PROJECT_DIR$/app/src/Blog.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/img/quickSort/cc28 verification.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/img/quickSort/cc28.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/img/code 26.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/img/insertion/code 26.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/img/code 26.png:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/Insertion/Sort/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/Insertion/Sort/App.java" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/../tree/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../tree/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../tree/.idea/gradle.xml" beforeDir="false" />
@@ -51,6 +61,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Ubuntu\home\mohammadkabbara\codefollowers\401\data-structures-and-algorithms\java\Insertion-Sort\app\src\img\quickSort" />
+      <recent name="\\wsl$\Ubuntu\home\mohammadkabbara\codefollowers\401\data-structures-and-algorithms\java\Insertion-Sort\app\src\img\insertion" />
       <recent name="\\wsl$\Ubuntu\home\mohammadkabbara\codefollowers\401\data-structures-and-algorithms\java\Insertion-Sort\app\src\img" />
     </key>
   </component>
