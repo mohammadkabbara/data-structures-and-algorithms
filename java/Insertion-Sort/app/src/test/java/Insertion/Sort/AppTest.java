@@ -4,8 +4,29 @@
 package Insertion.Sort;
 
 import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
+
 class AppTest {
+
+
+  @Test void mergeSort() {
+
+    int[]  emptyArr = {};
+    assertEquals(emptyArr, App.mergeSort(emptyArr));
+    int[]  oneElementArr = {8};
+    assertEquals("[8]", Arrays.toString(App.mergeSort(oneElementArr)));
+    int[]  regularArr = {8,4,23,42,16,15};
+    assertEquals("[4, 8, 15, 16, 23, 42]", Arrays.toString(App.mergeSort(regularArr)));
+    int[]  ReverseSortedArr = {20,18,12,8,5,-2};
+    assertEquals("[-2, 5, 8, 12, 18, 20]", Arrays.toString(App.mergeSort(ReverseSortedArr)));
+    int[]  FewUniquesArr = {5,12,7,5,5,7};
+    assertEquals("[5, 5, 5, 7, 7, 12]", Arrays.toString(App.mergeSort(FewUniquesArr)));
+    int[]  NearlySortedArr = {2,3,5,7,13,11};
+    assertEquals("[2, 3, 5, 7, 11, 13]", Arrays.toString(App.mergeSort(NearlySortedArr)));
+  }
 
 }
