@@ -3,24 +3,44 @@
  */
 package hashTable;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class App {
 
   public static void main(String[] args) {
+//
+//    HashTable<java.io.Serializable, Integer> myTable = new HashTable<>();
+//    myTable.add("mohammad" , 1);
+//    myTable.add("container" , 2);
+//    myTable.add("Alaa" , 2);
+//    myTable.add(555 , 3);
+//    myTable.add(8 , 4);
+//    System.out.println(myTable.get("mohammad"));
+//    System.out.println(myTable.get("container"));
+//    System.out.println(myTable.get("test"));
+//    System.out.println(myTable.contains("gogo"));
+//    System.out.println(myTable.contains("mohammad"));
+//    System.out.println(myTable.hash("40"));
+//    System.out.println(myTable.hash("mohammad"));
+//    System.out.println(myTable.hash("Alaa"));
+//    System.out.println(myTable);
 
-    HashTable<java.io.Serializable, Integer> myTable = new HashTable<>();
-    myTable.add("mohammad" , 1);
-    myTable.add("container" , 2);
-    myTable.add("Alaa" , 2);
-    myTable.add(555 , 3);
-    myTable.add(8 , 4);
-    System.out.println(myTable.get("mohammad"));
-    System.out.println(myTable.get("container"));
-    System.out.println(myTable.get("test"));
-    System.out.println(myTable.contains("gogo"));
-    System.out.println(myTable.contains("mohammad"));
-    System.out.println(myTable.hash("40"));
-    System.out.println(myTable.hash("mohammad"));
-    System.out.println(myTable.hash("Alaa"));
-    System.out.println(myTable);
+//////////////code 31 ////////////////
+    System.out.println(repeatedWord("\"Once upon a time, there was a brave princess who...\""));
+    System.out.println(repeatedWord("\"It was a queer, sultry summer, the summer they electrocuted the Rosenbergs," +
+      " and I didn’t know what I was doing in New York...\""));
+  }
+  public static String repeatedWord(String sentence) {
+    Map<String,String> hashMap = new HashMap<>();
+    String value = sentence.replace("," , "");
+    sentence = value;
+    String[] allWords = sentence.split(" ");
+    for (String word : allWords) {
+      word = word.toLowerCase();
+      if (hashMap.containsKey(word))return word;
+      else  hashMap.put(word,word);
+    }
+    return null;
   }
 }
