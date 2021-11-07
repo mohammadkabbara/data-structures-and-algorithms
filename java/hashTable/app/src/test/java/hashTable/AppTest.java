@@ -4,6 +4,10 @@
 package hashTable;
 
 import org.junit.jupiter.api.Test;
+
+import java.util.HashMap;
+import java.util.Map;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
@@ -17,12 +21,31 @@ class AppTest {
     assertEquals("hashTable =[null, null, null, null, null, null,  [ {Test:8} ] , null, null, null]", testTable.toString());
     assertEquals(8, testTable.get("Test"));
     assertNull(testTable.get("null"));
-    testTable.add("ddd" , "ddd Value");
-    testTable.add("Cat" , "Cat Value");
+    testTable.add("ddd", "ddd Value");
+    testTable.add("Cat", "Cat Value");
     assertEquals(" [ {Cat:Cat Value} {ddd:ddd Value} ] ", testTable.printOneBucket("Cat"));
     assertEquals("hashTable =[ [ {Cat:Cat Value} {ddd:ddd Value} ] , null, null, null, null, null,  [ {Test:8} ] , null, null, null]", testTable.toString());
-    assertEquals("Cat Value" , testTable.get("Cat"));
+    assertEquals("Cat Value", testTable.get("Cat"));
     assertEquals(0, testTable.hash("ddd"));
     assertEquals(0, testTable.hash("Cat"));
+
+
   }
-}
+    @Test
+    void hashMap_repeated_word() {
+
+      String string1 = "\"Once upon a time, there was A brave princess who...\"";
+      assertEquals("a", App.repeatedWord(string1));
+
+
+      String string3 = "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...";
+      assertEquals("summer", App.repeatedWord(string3));
+
+
+      String string2 = "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way – in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only...\"\t\"it\"\n" +
+        "\"It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...";
+      assertEquals("it", App.repeatedWord(string2));
+
+
+    }
+  }
