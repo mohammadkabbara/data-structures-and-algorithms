@@ -5,21 +5,23 @@ package tree_intersection;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.HashMap;
+
+import static org.junit.jupiter.api.Assertions.*;
 class AppTest {
   @Test void appHasAGreeting() {
     App classUnderTest = new App();
-    assertNotNull(classUnderTest.getGreeting());
+    assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
   }
 
 
   //Throw Exception if one of trees is empty
   @Test void emptyString(){
     HashMapClass hashMapClass = new HashMapClass();
-    BinaryTree firstTree = new BinaryTree();
-    BinaryTree secondTree = new BinaryTree();
-    Assertions.assertThrows(Exception.class, ()-> hashMapClass.treeIntersection(firstTree, secondTree));
+    BinaryTree tree1 = new BinaryTree();
+    BinaryTree tree2 = new BinaryTree();
+    Assertions.assertThrows(Exception.class, ()-> hashMapClass.treeIntersection(tree1, tree2));
   }
 
   @Test void happyPath() throws Exception{
@@ -38,5 +40,29 @@ class AppTest {
     binaryTree.getRoot().getRight().setRight(new Node(350));
     binaryTree.getRoot().getRight().getRight().setLeft(new Node(300));
     binaryTree.getRoot().getRight().getRight().setRight(new Node(500));
-  }}
 
+  }
+
+  @Test void emptyHashMaps(){
+    HashMapClass hashMapClass = new HashMapClass();
+    HashMap<String, String> left = new HashMap<>();
+    HashMap<String, String> right = new HashMap<>();
+    Assertions.assertThrows(Exception.class, ()-> hashMapClass.leftJoin(left, right));
+  }
+
+  @Test void happyPathLeftJoin() throws Exception{
+    HashMapClass hashMapClass = new HashMapClass();
+    HashMap<String, String> left = new HashMap<>();
+    HashMap<String, String> right = new HashMap<>();
+    left.put("fond", "enamored");
+    left.put("wrath", "anger");
+    left.put("diligent", "employed");
+
+    right.put("fond", "averse");
+    right.put("wrath", "delight");
+    right.put("diligent", "idle");
+
+    assertEquals("[[diligent, employed, idle], [wrath, anger, delight], [fond, enamored, averse]]", hashMapClass.leftJoin(left, right));
+  }
+
+}

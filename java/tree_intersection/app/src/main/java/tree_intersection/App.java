@@ -48,5 +48,22 @@ public class App {
     HashMapClass hashMapClass = new HashMapClass();
     hashMapClass.treeIntersection(binaryTree1, binaryTree);
 
+    ///////////////cc33/////////////
+
+    HashMap<String, String> left = new HashMap<>();
+    HashMap<String, String> right = new HashMap<>();
+
+    left.put("fond", "enamored");
+    left.put("wrath", "anger");
+    left.put("diligent", "employed");
+
+
+    right.put("fond", "averse");
+    right.put("wrath", "delight");
+    right.put("diligent", "idle");
+
+
+    hashMapClass.leftJoin(left, right);
+
   }
 }
