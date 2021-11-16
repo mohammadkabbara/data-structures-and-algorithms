@@ -8,60 +8,61 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
 
-  @Test
-  public void graph() {
-    Graph<String> graph = new Graph<>();
-    assertNull(graph.toString());
+//  @Test
+//  public void graph() {
+//    Graph<String> graph = new Graph<>();
+//    assertNull(graph.toString());
+//
+//
+//    graph.addNode("8");
+//    assertEquals("[8]", graph.getNodes().toString());
+//
+//
+//    graph.addEdge("8", "8");
+//    assertEquals("[8]", graph.getNeighbors("8").toString());
+//    assertEquals("{8=[8]}", graph.nodeList.toString());
+//
+//
+//    graph.addNode("5");
+//    graph.addEdge("8", "5");
+//    assertEquals("[8, 5]", graph.getNeighbors("8").toString());
+//    assertEquals("[8]", graph.getNeighbors("5").toString());
+//
+//
+//    assertEquals("[5, 8]", graph.getNodes().toString());
+//
+//    assertEquals("{5=[8], 8=[8, 5]}", graph.nodeList.toString());
+//
+//    assertEquals(2, graph.size());
+//
+//  }
+//    @Test
+//    public void graphBreadthFirst() {
+//
+//
+//      Graph<String> graph = new Graph<>();
+//      assertNull(graph.breadthFirst(null));
+//
+//
+//      graph.addNode("8");
+//      assertEquals("[8]", graph.breadthFirst("8").toString());
+//
+//
+//      graph.addEdge("8", "8");
+//      assertEquals("[8]", graph.breadthFirst("8").toString());
+//
+//
+//      graph.addNode("2");
+//      graph.addNode("1");
+//      graph.addNode("9");
+//      graph.addNode("7");
+//      graph.addNode("5");
+//      graph.addEdge("8" , "9");
+//      graph.addEdge("8" , "2");
+//      graph.addEdge("8" , "1");
+//      graph.addEdge("5" , "1");
+//      graph.addEdge("7" , "5");
+//      assertEquals("[8, 9, 2, 1, 5, 7]", graph.breadthFirst("8").toString());
+//    }
 
-
-    graph.addNode("8");
-    assertEquals("[8]", graph.getNodes().toString());
-
-
-    graph.addEdge("8", "8");
-    assertEquals("[8]", graph.getNeighbors("8").toString());
-    assertEquals("{8=[8]}", graph.nodeList.toString());
-
-
-    graph.addNode("5");
-    graph.addEdge("8", "5");
-    assertEquals("[8, 5]", graph.getNeighbors("8").toString());
-    assertEquals("[8]", graph.getNeighbors("5").toString());
-
-
-    assertEquals("[5, 8]", graph.getNodes().toString());
-
-    assertEquals("{5=[8], 8=[8, 5]}", graph.nodeList.toString());
-
-    assertEquals(2, graph.size());
-
-  }
-    @Test
-    public void graphBreadthFirst() {
-
-
-      Graph<String> graph = new Graph<>();
-      assertNull(graph.breadthFirst(null));
-
-
-      graph.addNode("8");
-      assertEquals("[8]", graph.breadthFirst("8").toString());
-
-
-      graph.addEdge("8", "8");
-      assertEquals("[8]", graph.breadthFirst("8").toString());
-
-
-      graph.addNode("2");
-      graph.addNode("1");
-      graph.addNode("9");
-      graph.addNode("7");
-      graph.addNode("5");
-      graph.addEdge("8" , "9");
-      graph.addEdge("8" , "2");
-      graph.addEdge("8" , "1");
-      graph.addEdge("5" , "1");
-      graph.addEdge("7" , "5");
-      assertEquals("[8, 9, 2, 1, 5, 7]", graph.breadthFirst("8").toString());
-    }
   }

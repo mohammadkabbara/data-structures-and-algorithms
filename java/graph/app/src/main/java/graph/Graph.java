@@ -15,7 +15,7 @@ public class Graph<T> {
     return newNode;
   }
 
-  public void addEdge(T value1, T value2) {
+  public void addEdge(T value1, T value2 ,int weight) {
     Node<T> node1 = new Node<T>(value1);
     if (value1.equals(value2)){
       nodeList.get(node1).add(node1);
@@ -23,6 +23,8 @@ public class Graph<T> {
       Node<T> node2 = new Node<T>(value2);
       nodeList.get(node1).add(node2);
       nodeList.get(node2).add(node1);
+      weightList.put(value1 + "->" + value2 , weight);
+      weightList.put(value2 + "->" + value1 , weight);
     }
   }
 
@@ -62,6 +64,18 @@ public class Graph<T> {
     return nodes;
   }
 
+  public Map<String , Integer> weightList = new HashMap<>();
+  public String businessTrip(T value, T [] arr) {
+    int cost = 0;
+    for (int i = 0; i < arr.length -1; i++) {
+      if (getNeighbors(arr[i]).contains(new Node<>(arr[i+1]))) {
+        cost += weightList.get(arr[i] + "->" + arr[i+1]);
+      } else {
+        return "False, $0";
+      }
+    }
+    return true+", $" + cost ;
+  }
   @Override
   public String toString() {
     if (nodeList.isEmpty()) return null;
