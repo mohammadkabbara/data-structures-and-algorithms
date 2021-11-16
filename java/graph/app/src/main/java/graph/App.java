@@ -37,11 +37,12 @@ public class App {
 //        System.out.println(myGraph.weightList);
 //        System.out.println(myGraph.breadthFirst("7"));
 //        System.out.println(myGraph.breadthFirst("5"));
-    System.out.println(myGraph.businessTrip("8",trip));
-    System.out.println(myGraph.businessTrip("8",trip2));
-    System.out.println(myGraph.businessTrip("8",trip3));
-    System.out.println(myGraph.businessTrip("8",trip4));
-    System.out.println(myGraph.businessTrip("8",trip5));
-    System.out.println(myGraph.businessTrip("8",trip6));
+//    System.out.println(myGraph.businessTrip("8",trip));
+//    System.out.println(myGraph.businessTrip("8",trip2));
+//    System.out.println(myGraph.businessTrip("8",trip3));
+//    System.out.println(myGraph.businessTrip("8",trip4));
+//    System.out.println(myGraph.businessTrip("8",trip5));
+//    System.out.println(myGraph.businessTrip("8",trip6));
+    System.out.println(myGraph.depthFirst("8"));
   }
 }

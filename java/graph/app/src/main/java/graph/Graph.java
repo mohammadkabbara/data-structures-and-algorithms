@@ -76,6 +76,31 @@ public class Graph<T> {
     }
     return true+", $" + cost ;
   }
+
+  public List<Node<T>> depthFirst(T value) {
+    Node<T> node = new Node(value);
+    if (node.value == null) return null;
+
+    List<Node<T>> nodes = new ArrayList<>();
+    Stack<T> depth = new Stack<T>();
+    Set<Node<T>> visited = new HashSet<>();
+
+    depth.push(node);
+
+    while (!depth.isEmpty()) {
+      Node<T> top = depth.pop();
+      if (!visited.contains(top)) {
+        visited.add(top);
+        nodes.add(top);
+        for (Node<T> neighbor : getNeighbors(top.value)) {
+          depth.push(neighbor);
+        }
+      }
+    }
+    return nodes;
+  }
+
+
   @Override
   public String toString() {
     if (nodeList.isEmpty()) return null;
