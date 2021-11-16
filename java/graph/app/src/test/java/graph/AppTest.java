@@ -10,7 +10,7 @@ class AppTest {
 
   @Test
   public void graph() {
-    Graph graph = new Graph();
+    Graph<String> graph = new Graph<>();
     assertNull(graph.toString());
 
 
@@ -36,5 +36,32 @@ class AppTest {
     assertEquals(2, graph.size());
 
   }
+    @Test
+    public void graphBreadthFirst() {
 
-}
+
+      Graph<String> graph = new Graph<>();
+      assertNull(graph.breadthFirst(null));
+
+
+      graph.addNode("8");
+      assertEquals("[8]", graph.breadthFirst("8").toString());
+
+
+      graph.addEdge("8", "8");
+      assertEquals("[8]", graph.breadthFirst("8").toString());
+
+
+      graph.addNode("2");
+      graph.addNode("1");
+      graph.addNode("9");
+      graph.addNode("7");
+      graph.addNode("5");
+      graph.addEdge("8" , "9");
+      graph.addEdge("8" , "2");
+      graph.addEdge("8" , "1");
+      graph.addEdge("5" , "1");
+      graph.addEdge("7" , "5");
+      assertEquals("[8, 9, 2, 1, 5, 7]", graph.breadthFirst("8").toString());
+    }
+  }

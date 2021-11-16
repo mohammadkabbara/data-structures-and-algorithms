@@ -7,7 +7,8 @@ public class App {
 
   public static void main(String[] args) {
 
-    Graph<String> graph = new Graph<>();
+//    Graph<String> graph = new Graph<>();
+    Graph graph = new Graph();
     graph.addNode("10");
     graph.addNode("5");
     graph.addNode("4");
@@ -18,11 +19,14 @@ public class App {
     graph.addEdge("10" , "7");
     graph.addEdge("5" , "1");
     graph.addEdge("7" , "4");
-    System.out.println(graph);
-    System.out.println(graph.getNodes());
-    System.out.println(graph.getNeighbors("10"));
-    System.out.println(graph.getNeighbors("5"));
-    System.out.println(graph.getNeighbors("7"));
-    System.out.println(graph.size());
+//    System.out.println(graph);
+//    System.out.println(graph.getNodes());
+//    System.out.println(graph.getNeighbors("10"));
+//    System.out.println(graph.getNeighbors("5"));
+//    System.out.println(graph.getNeighbors("7"));
+//    System.out.println(graph.size());
+    System.out.println(graph.breadthFirst("10"));
+    System.out.println(graph.breadthFirst("5"));
+    System.out.println(graph.breadthFirst("7"));
   }
 }
